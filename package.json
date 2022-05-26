@@ -9,7 +9,7 @@
     "build:doc": "typedoc --out dist/doc lib && touch dist/doc/.nojekyll",
     "check-types": "tsc",
     "dev": "babel ./lib --out-dir dist --extensions '.ts,.tsx' --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [
     "nextcloud"
@@ -31,6 +31,8 @@
     "@babel/preset-typescript": "^7.9.0",
     "@nextcloud/browserslist-config": "^2.0.0",
     "@nextcloud/typings": "^1.0.0",
+    "@types/jest": "^27.5.1",
+    "jest": "^28.1.0",
     "typedoc": "^0.22.4",
     "typescript": "^4.0.2"
   },
